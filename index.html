@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Hazel Autobiography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Hazel</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home" onclick="showSection('home')">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about" onclick="showSection('about')">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#education" onclick="showSection('education')">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#love" onclick="showSection('love')">Love</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#photos" onclick="showSection('photos')">Photos</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact" onclick="showSection('contact')">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#home" onclick="showSection('home')">Home</a>
+                <a href="#about" onclick="showSection('about')">About</a>
+                <a href="#education" onclick="showSection('education')">Education</a>
+                <a href="#love" onclick="showSection('love')">Love</a>
+                <a href="#photos" onclick="showSection('photos')">Photos</a>
+                <a href="#contact" onclick="showSection('contact')">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="content-section animate">
+        <div class="main-container">
+            <div class="image animated" data-aos="zoom-in-right" data-aos-duration="2500">
+                <div class="image-container">
+                    <img src="hazel.jpg" alt="">
+                    <div class="circle-line"></div>
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="animate__animated animate__lightSpeedInRight" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hi I'm <span>Hazel!</span></h1>
+                <div class="typewriter animate__animated animate__zoomInDown animate__slow" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span>Computer Engineering Student</div>
+                <p class="animate__animated animate__swing animate__slow" data-aos="flip-up" data-aos-duration="900" data-aos-delay="1000">Know more about me!</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com"><img src="twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="content-section" style="display: none;">
+        <div class="about-container">
+            <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                <img src="1.jpg" alt="About Image">
+            </div>
+            <div class="about-content">
+                <h2 class="animate__animated animate__flipInX animate__slow">About Me</h2>
+                <div class="about-paragraph">
+                    <p>Hi! I am Hazel Ann Olmo Reyes, 19 years old, I was born and raised in Jalajala Rizal,I am the youngest, I have one older sister.</p>
+                </div>
+                <div class="about-paragraph">
+                    <p>Currently, I am taking up Bachelor of Science in Computer Engineering at University of Rizal System - Morong Campus</p>
+                </div>
+                <div class="about-paragraph">
+                    <p>Personally, I am a shy person to most people, but I am super talkative and funny to those people I feel comfortable with.</p>
+                </div>
+                <div class="about-paragraph">
+                    <p>Outside academics, I love traveling, I also love watching Kdrama and Thai drama and Kpop, it is part of my stress reliever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="content-section" style="display: none;">
+        <div class="education-container">
+            <div class="education-images">
+                <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <img src="2.jpg" alt="Education Image">
+                </div>
+                <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <img src="5.jpg" alt="Education Image">
+                </div>
+                <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <img src="6.jpg" alt="Education Image">
+                </div>
+                <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <img src="3.jpg" alt="Education Image">
+                </div>
+                <div class="about-image zoom-in animate__animated animate__slideInLeft" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <img src="4.jpg" alt="Education Image">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="animate__animated animate__flipInX animate__slow">Education</h2>
+                <div class="education-grid">
+                    <div class="education-column">
+                        <div class="education-item">
+                            <h3>Daycare</h3>
+                            <p>I graduated Daycare at Barangay Bayugo Daycare center on 2009</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Kinder & Elementary</h3>
+                            <p>I graduated Elementary in Bayugo Elementary School last 2017</p>
+                        </div>
+                    </div>
+                    <div class="education-column">
+                        <div class="education-item">
+                            <h3>Junior High School</h3>
+                            <p>I graduated Junior High School at Bayugo National High School last 2021</p>
+                        </div>
+                        <div class="education-item">
+                            <h3>Senior High School</h3>
+                            <p>I graduated Senior High School at St. Michael Parochial School last 2023</p>
+                        </div>
+                    </div>
+                    <div class="education-column">
+                        <div class="education-item">
+                            <h3>College</h3>
+                            <p>Currently I am studying at University of Rizal System - Morong Campus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="love" class="content-section" style="display: none;">
+    <div class="love-container">
+        <h2 class="animate__animated animate__flipInX animate__slow">My Favorites</h2>
+        <div class="love-gallery">
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="love-image">
+                    <img src="7.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Watching</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="love-image">
+                    <img src="8.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Listening To Music</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="love-image">
+                    <img src="9.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Sleeping</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">My favorite singers</p>
+        <div class="love-gallery">
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="love-image">
+                    <img src="10.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>BLACKPINK</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="love-image">
+                    <img src="11.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>IU</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="love-image">
+                    <img src="12.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>GRACIE ABRAMS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">My favorite korean actor/actress</p>
+        <div class="love-gallery">
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="love-image">
+                    <img src="13.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Kim Sejeong</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="love-image">
+                    <img src="14.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Park Hyung-Sik</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="love-image">
+                    <img src="15.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Lee Hyeri</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">My favorite thai actress</p>
+        <div class="love-gallery">
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="love-image">
+                    <img src="16.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Emi</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="love-image">
+                    <img src="17.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Lingling</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="love-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <div class="love-image">
+                    <img src="18.jpg" alt="Love Image">
+                    <div class="love-caption">
+                        <h3>Namtan</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="photos" class="content-section" style="display: none;">
+        <h2>Photos</h2>
+        <p>This is the photos section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>More photos...</p>
+        <p>And some more content to make this section long enough to scroll.</p>
+        <p>Even more content...</p>
+    </section>
+    <section id="contact" class="content-section" style="display: none;">
+        <h2>Contact</h2>
+        <p>This is the contact section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>How to contact me...</p>
+        <p>And some more content to make this section long enough to scroll.</p>
+        <p>Even more content...</p>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+
+        function cancel(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+
+            if (sectionId === 'about' || sectionId === 'education' || sectionId === 'love') {
+                const aboutImage = selectedSection.querySelector('.about-image');
+                if (aboutImage) {
+                    aboutImage.classList.add('zoom-in-effect');
+                    setTimeout(() => {
+                        aboutImage.classList.remove('zoom-in-effect');
+                    }, 1000); // Duration of the zoom-in effect
+                }
+            }
+
+            cancel(); // Close the dropdown menu after selecting a section
+        }
+
+        function reanimateHomeSection() {
+            const homeSection = document.getElementById('home');
+            homeSection.classList.remove('animate');
+            void homeSection.offsetWidth; // Trigger reflow to restart CSS animation
+            homeSection.classList.add('animate');
+            reanimateAOS();
+        }
+
+        function reanimateAOS() {
+            const homeSectionElements = document.querySelectorAll('#home [data-aos]');
+            homeSectionElements.forEach(element => {
+                element.classList.remove('aos-animate');
+                void element.offsetWidth; // Trigger reflow to restart AOS animation
+                element.classList.add('aos-animate');
+            });
+        }
+
+        // Automatically show the Home section when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('home');
+        });
+    </script>
+</body>
+</html>
